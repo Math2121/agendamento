@@ -66,4 +66,21 @@ app.post("/finish",async (req,res)=>{
     }
     
 })
+
+app.get("/list",async (req,res)=>{
+  
+    const appos = await AppointmentService.GetAll(true)
+    res.render('list',{appos})
+})
+
+app.get("/search",async (req, res)=>{
+    const appos = await AppointmentService.Search(req.query.search)
+res.render('list',{appos})
+
+})
+
+setInterval(async ()=>{
+await AppointmentService.SendNotification()
+},5000)
+
 app.listen(8080, () => {})
