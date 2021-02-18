@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Agendamento - Cadastro</title>
+</head>
+
+<body>
+    <h2>Cadastro de consulta</h2>
+    <form action="create" method="post">
+        <div class="container">
+            <div class="mb-3">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Paciente" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="name">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu melhor e-mail" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="name">CPF</label>
+                <input type="cpf" name="cpf" id="cpf" placeholder="Digite seu CPF" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="description">Descrição</label>
+                <input type="description" name="description" id="description" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="date"> Data da
+                    consulta</label>
+                <input type="date" name="date" id="date" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="time"> Horário da consulta</label>
+                <input type="time" name="time" id="time">
+            </div>
+
+            <button class="btn btn-success btn-block">Agendar</button>
+        </div>
+    </form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script src="jquery.mask.min.js"></script>
+    <script>
+             $('#cpf').mask('000.000.000-00');
+    </script>
+</body>
+
+</html>
