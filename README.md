@@ -15,10 +15,10 @@
 <img src="public/demo3.png" alt="Home" width="100%" height="100%">
 
  ## TECHS 🚀
- [x] JS
- [x] Node
- [x] Express
- [x] Mongo
+ [x] JS <br>
+ [x] Node <br>
+ [x] Express <br>
+ [x] Mongo <br>
 
  ## Author
 
